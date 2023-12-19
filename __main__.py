@@ -14,6 +14,8 @@ def load_data():
 
 students_raw_data, grades_raw_data, classes_raw_data = load_data()
 
-students_table = Table(students_raw_data)
-grades_table = Table(grades_raw_data)
-classes_table = Table(classes_raw_data)
+students_table = Table.from_csv(students_raw_data)
+grades_table = Table.from_csv(grades_raw_data)
+classes_table = Table.from_csv(classes_raw_data)
+
+print(get_student_with_best_average_score(students_table, grades_table, classes_table))
