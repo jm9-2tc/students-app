@@ -1,0 +1,1 @@
+### This is an example project that allows for finding student with best average score
